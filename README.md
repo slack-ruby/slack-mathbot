@@ -1,9 +1,9 @@
-Slack-Gamebot
+Slack-Mathbot
 =============
 
 [![Build Status](https://travis-ci.org/dblock/slack-mathbot.png)](https://travis-ci.org/dblock/slack-mathbot)
 
-A math bot for Slack.
+A math bot for Slack. Math is good for you.
 
 ![](screenshots/two-plus-two.gif)
 
