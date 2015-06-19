@@ -13,6 +13,10 @@ See [DEPLOYMENT](DEPLOYMENT.md).
 
 ## Usage
 
+Invite your bot to a channel. Do math by starting a message with an equal sign.
+
+![](screenshots/example.gif)
+
 ### Commands
 
 #### mathbot calculate [expression]
