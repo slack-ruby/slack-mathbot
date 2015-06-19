@@ -8,6 +8,7 @@ gem 'puma'
 gem 'sinatra'
 gem 'activesupport'
 gem 'dentaku'
+gem 'giphy', '~> 2.0.2'
 
 group :development, :test do
   gem 'rake', '~> 10.4'

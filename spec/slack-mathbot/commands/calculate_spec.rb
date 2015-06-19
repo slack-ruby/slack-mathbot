@@ -13,4 +13,7 @@ describe SlackMathbot::Commands::Calculate, vcr: { cassette_name: 'user_info' } 
   it 'sends something without an answer' do
     expect(message: 'mathbot calculate pi', channel: 'channel').to respond_with_slack_message('Got nothing.')
   end
+  it 'reports division by zero' do
+    expect(message: 'mathbot calculate 1/0', channel: 'channel').to respond_with_slack_message('Sorry, divided by 0.')
+  end
 end

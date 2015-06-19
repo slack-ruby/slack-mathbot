@@ -5,6 +5,7 @@ RSpec::Matchers.define :respond_with_slack_message do |expected|
     channel, user, message = parse(actual)
     app = SlackMathbot::App.new
     SlackMathbot.config.user = 'mathbot'
+    allow(Giphy).to receive(:random)
     expect(SlackMathbot::Commands::Base).to receive(:send_message).with(channel, expected)
     app.send(:message, text: message, channel: channel, user: user)
     true
