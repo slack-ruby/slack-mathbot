@@ -1,0 +1,11 @@
+require File.expand_path('../config/environment', __FILE__)
+
+require 'sinatra/base'
+
+module SlackMathbot
+  class Web < Sinatra::Base
+    get '/' do
+      'Math is good for you.'
+    end
+  end
+end

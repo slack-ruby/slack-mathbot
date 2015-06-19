@@ -1,0 +1,6 @@
+{
+	"name": "Math bot for Slack",
+	"description": "Slack integration with math.",
+	"respository": "https://github.com/dblock/slack-mathbot",
+	"keywords": ["slack", "integration", "math"],
+}
