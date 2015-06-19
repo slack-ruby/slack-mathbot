@@ -16,6 +16,29 @@ cd slack-mathbot
 git remote add upstream https://github.com/dblock/slack-mathbot.git
 ```
 
+## Bundle Install and Test
+
+Ensure that you can build the project and run tests.
+
+```
+bundle install
+bundle exec rake
+```
+
+## Run SlackMathbot in Development
+
+Create a private slack group for yourself.
+
+Create a new Bot Integration under [services/new/bot](http://slack.com/services/new/bot).
+
+![](screenshots/register-bot.png)
+
+On the next screen, note the API token.
+
+Run `SLACK_API_TOKEN=<your API token> foreman start`.
+
+You can also create a `.env` file with `SLACK_API_TOKEN=<your API token>` and just run `foreman start`.
+
 ## Create a Topic Branch
 
 Make sure your fork is up-to-date and create a topic branch for your feature or bug fix.
@@ -24,15 +47,6 @@ Make sure your fork is up-to-date and create a topic branch for your feature or 
 git checkout master
 git pull upstream master
 git checkout -b my-feature-branch
-```
-
-## Bundle Install and Test
-
-Ensure that you can build the project and run tests.
-
-```
-bundle install
-bundle exec rake
 ```
 
 ## Write Tests

@@ -9,18 +9,6 @@ A math bot for Slack.
 
 ## Installation
 
-Create a new Bot Integration under [services/new/bot](http://slack.com/services/new/bot).
-
-![](screenshots/register-bot.png)
-
-On the next screen, note the API token.
-
-Run `SLACK_API_TOKEN=<your API token> foreman start`
-
-While it's currently not necessary, uyou may need to set _GIPHY_API_KEY_ in the future, see [github.com/Giphy/GiphyAPI](https://github.com/Giphy/GiphyAPI) for details.
-
-## Production Deployment
-
 See [DEPLOYMENT](DEPLOYMENT.md).
 
 ## Usage
