@@ -1,6 +1,6 @@
 module SlackMathbot
   module Commands
-    class Calculate < Base
+    class Calculate < SlackRubyBot::Commands::Base
       def self.call(data, _command, arguments)
         result = Dentaku::Calculator.new.evaluate(arguments.join)
         result = result.to_s if result

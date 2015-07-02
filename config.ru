@@ -1,4 +1,7 @@
-require File.expand_path('../app', __FILE__)
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
+require 'slack-mathbot'
+require 'web'
 
 Thread.new do
   SlackMathbot::App.instance.run

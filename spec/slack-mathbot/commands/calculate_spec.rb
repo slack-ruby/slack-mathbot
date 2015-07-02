@@ -1,6 +1,12 @@
 require 'spec_helper'
 
 describe SlackMathbot::Commands::Calculate, vcr: { cassette_name: 'user_info' } do
+  def app
+    SlackMathbot::App.new
+  end
+  before do
+    app.config.user = 'mathbot'
+  end
   it 'adds two numbers' do
     expect(message: 'mathbot calculate 2+2', channel: 'channel').to respond_with_slack_message('4')
   end

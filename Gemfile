@@ -2,13 +2,10 @@ source 'http://rubygems.org'
 
 ruby '2.1.6'
 
-gem 'hashie'
-gem 'slack-api', '~> 1.1.6', require: 'slack'
+gem 'slack-ruby-bot'
 gem 'puma'
 gem 'sinatra'
-gem 'activesupport'
 gem 'dentaku'
-gem 'giphy', '~> 2.0.2'
 
 group :development, :test do
   gem 'rake', '~> 10.4'
@@ -17,8 +14,8 @@ group :development, :test do
 end
 
 group :test do
-  gem 'rspec', '~> 3.2'
-  gem 'rack-test', '~> 0.6.2'
+  gem 'rspec'
+  gem 'rack-test'
   gem 'vcr'
   gem 'webmock'
 end
