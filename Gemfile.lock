@@ -1,12 +1,13 @@
 GIT
   remote: git://github.com/dblock/slack-ruby-bot.git
-  revision: 8385892c5ff6b7860435ca4b1f46017bb45175db
+  revision: edef7edd1c0e0f5abe70ab801593f4a2ef66766b
   specs:
     slack-ruby-bot (0.2.0)
       activesupport
       giphy (~> 2.0.2)
       hashie
       slack-api (~> 1.1.6)
+      websocket-driver (~> 0.5.4)
 
 GEM
   remote: http://rubygems.org/
@@ -104,7 +105,7 @@ GEM
     webmock (1.21.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
-    websocket-driver (0.6.0)
+    websocket-driver (0.5.4)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.2)
 

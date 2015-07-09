@@ -4,7 +4,13 @@ require 'slack-mathbot'
 require 'web'
 
 Thread.new do
-  SlackMathbot::App.instance.run
+  begin
+    SlackMathbot::App.instance.run
+  rescue Exception => e
+    STDERR.puts "ERROR: #{e}"
+    STDERR.puts e.backtrace
+    raise e
+  end
 end
 
 run SlackMathbot::Web
