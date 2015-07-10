@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SlackMathbot::Commands::Calculate, vcr: { cassette_name: 'user_info' } do
+describe SlackMathbot::Commands::Calculate do
   def app
     SlackMathbot::App.new
   end

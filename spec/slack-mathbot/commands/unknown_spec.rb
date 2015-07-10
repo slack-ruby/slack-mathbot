@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SlackRubyBot::Commands::Unknown, vcr: { cassette_name: 'user_info' } do
+describe SlackRubyBot::Commands::Unknown do
   def app
     SlackMathbot::App.new
   end
