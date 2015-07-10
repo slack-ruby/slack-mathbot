@@ -4,9 +4,6 @@ describe SlackRubyBot::Commands::Unknown, vcr: { cassette_name: 'user_info' } do
   def app
     SlackMathbot::App.new
   end
-  before do
-    app.config.user = 'mathbot'
-  end
   it 'invalid command' do
     expect(message: 'mathbot foobar').to respond_with_slack_message("Sorry <@user>, I don't understand that command!")
   end
