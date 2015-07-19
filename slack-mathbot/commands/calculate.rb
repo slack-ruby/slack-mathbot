@@ -2,9 +2,10 @@ module SlackMathbot
   module Commands
     class Calculate < SlackRubyBot::Commands::Base
       operator '='
+      command 'calculate'
 
-      def self.call(data, _command, arguments)
-        result = Dentaku::Calculator.new.evaluate(arguments.join)
+      def self.call(data, match)
+        result = Dentaku::Calculator.new.evaluate(match[:expression]) if match.names.include?('expression')
         result = result.to_s if result
         if result && result.length > 0
           send_message data.channel, result

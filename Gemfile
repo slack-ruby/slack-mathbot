@@ -1,8 +1,8 @@
 source 'http://rubygems.org'
 
-ruby '2.1.6'
+ruby '2.2.0'
 
-gem 'slack-ruby-bot', '~> 0.2.0'
+gem 'slack-ruby-bot', '~> 0.3.0'
 gem 'puma'
 gem 'sinatra'
 gem 'dentaku'
