@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 ruby '2.2.0'
 
-gem 'slack-ruby-bot', '~> 0.3.0'
+gem 'slack-ruby-bot'
 gem 'puma'
 gem 'sinatra'
 gem 'dentaku'
