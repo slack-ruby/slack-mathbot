@@ -17,6 +17,6 @@ describe SlackMathbot::Commands::Calculate do
     expect(message: 'mathbot calculate pi', channel: 'channel').to respond_with_slack_message('Got nothing.')
   end
   it 'reports division by zero' do
-    expect(message: 'mathbot calculate 1/0', channel: 'channel').to respond_with_slack_message('Sorry, divided by 0.')
+    expect(message: 'mathbot calculate 1/0', channel: 'channel').to respond_with_slack_message('Sorry, ZeroDivisionError.')
   end
 end
