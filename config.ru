@@ -5,7 +5,7 @@ require 'web'
 
 Thread.new do
   begin
-    SlackMathbot::App.instance.run
+    SlackMathbot::Bot.run
   rescue Exception => e
     STDERR.puts "ERROR: #{e}"
     STDERR.puts e.backtrace

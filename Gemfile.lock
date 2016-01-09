@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dblock/slack-ruby-bot.git
-  revision: ca6b256ba2a591a64283eefcec6d966bc9400d70
+  revision: 381fa11e0bde7ce8143e4e034737b3f969312f76
   specs:
     slack-ruby-bot (0.6.0)
       activesupport
@@ -18,7 +18,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    addressable (2.3.8)
     ast (2.2.0)
     astrolabe (1.3.1)
       parser (~> 2.2)
@@ -99,12 +99,12 @@ GEM
       websocket-driver
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (2.0.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     vcr (3.0.1)
-    webmock (1.22.3)
-      addressable (>= 2.3.6)
+    webmock (1.22.5)
+      addressable (< 2.4.0)
       crack (>= 0.3.2)
       hashdiff
     websocket-driver (0.6.3)
