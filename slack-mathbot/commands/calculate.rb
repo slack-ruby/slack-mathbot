@@ -8,12 +8,12 @@ module SlackMathbot
         result = Dentaku::Calculator.new.evaluate(match[:expression]) if match.names.include?('expression')
         result = result.to_s if result
         if result && result.length > 0
-          send_message client, data.channel, result
+          client.say(channel: data.channel, text: result)
         else
-          send_message_with_gif client, data.channel, 'Got nothing.', 'nothing'
+          client.say(channel: data.channel, text: 'Got nothing.', gif: 'nothing')
         end
       rescue StandardError => e
-        send_message_with_gif client, data.channel, "Sorry, #{e.message}.", 'idiot'
+        client.say(channel: data.channel, text: "Sorry, #{e.message}.", gif: 'idiot')
       end
     end
   end
