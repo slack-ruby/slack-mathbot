@@ -1,21 +1,22 @@
 source 'http://rubygems.org'
 
-ruby '2.2.0'
+ruby '2.5.3'
 
-gem 'slack-ruby-bot', github: 'dblock/slack-ruby-bot' # '~> 0.5.0'
+gem 'celluloid-io'
+gem 'dentaku'
 gem 'puma'
 gem 'sinatra'
-gem 'dentaku'
+gem 'slack-ruby-bot', '~> 0.12.0'
 
 group :development, :test do
-  gem 'rake', '~> 10.4'
-  gem 'rubocop', '0.31.0'
   gem 'foreman'
+  gem 'rake', '~> 10.4'
+  gem 'rubocop', '0.65.0'
 end
 
 group :test do
-  gem 'rspec'
   gem 'rack-test'
+  gem 'rspec'
   gem 'vcr'
   gem 'webmock'
 end

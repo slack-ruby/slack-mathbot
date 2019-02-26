@@ -1,9 +1,7 @@
 require 'spec_helper'
 
 describe SlackMathbot::Commands::Default do
-  def app
-    SlackMathbot::Bot.instance
-  end
+  let(:app) { SlackMathbot::Bot.instance }
   it 'mathbot' do
     expect(message: 'mathbot').to respond_with_slack_message(SlackMathbot::ABOUT)
   end
