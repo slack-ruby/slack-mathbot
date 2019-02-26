@@ -97,7 +97,7 @@ GEM
     slack-ruby-bot (0.12.0)
       hashie
       slack-ruby-client (>= 0.14.0)
-    slack-ruby-client (0.14.0)
+    slack-ruby-client (0.14.1)
       activesupport
       faraday (>= 0.9)
       faraday_middleware
