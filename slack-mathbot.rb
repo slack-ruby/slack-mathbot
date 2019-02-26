@@ -1,3 +1,4 @@
+require 'dentaku'
 require 'slack-ruby-bot'
 require 'slack-mathbot/version'
 require 'slack-mathbot/about'

@@ -3,4 +3,13 @@ AllCops:
     - vendor/**/*
     - bin/**/*
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
 inherit_from: .rubocop_todo.yml
